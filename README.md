@@ -41,19 +41,36 @@ The system automatically classifies transactions into two distinct risk categori
 
 ### 2. Installation
 Clone the repository and install dependencies:
-```bash
-git clone [https://github.com/yourusername/Sentinel-Real-Time-Fraud-Detection.git](https://github.com/yourusername/Sentinel-Real-Time-Fraud-Detection.git)
+```
+git clone https://github.com/yourusername/Sentinel-Real-Time-Fraud-Detection.git
 cd Sentinel-Real-Time-Fraud-Detection
 pip install -r requirements.txt
-3. AWS Configuration
+```
+### 3. AWS Configuration
 Create an S3 bucket (e.g., sentinel-fraud-lake).
 
 Update fraud_detection_stream.py with your Bucket Name and AWS Keys.
 
 Run the stream:
 
-Bash
-python fraud_detection_stream.py
+```
 
+python fraud_detection_stream.py
+```
+
+### 4. Connect Power BI
+Open Sentinel_Dashboard.pbix.
+
+If prompted, update the ODBC Data Source to point to your AWS Athena region.
 
 Click Refresh to see live data streaming in from your Python script.
+
+📜 License
+This project is open-source and available under the MIT License.
+
+
+
+
+
+Click Refresh to see live data streaming in from your Python script.```
+
